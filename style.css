@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,21 +8,25 @@
 .main-container{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    background-color: lightgray;
+    background-color: #E2E8F0;
+    font-family: 'Roboto',sans-serif;
 }
-.main-content div{
-    height: 200px;
-    border-left: 5px solid orange;
+.main-content .card{
+    min-height: 30.5vh;
+    border-left: 8px solid orange;
+    display: grid;
 }
 .main-content{
     display: grid;
     grid-template-columns:1fr 1fr;
-    gap:15px ;
+    gap:0.9375rem;
 }
 .aside-content{
     grid-row: 1/4;
     background-color: rgb(59, 132, 241);
     display: grid;
+    grid-template-rows: 1fr 3fr 2fr 3fr;
+    color: white;
    
 }
 .header{
@@ -32,35 +38,178 @@
 }
 .content-container{
     grid-area: 2/2/4/3;
-    padding:15px 15px 40px 15px;
+    padding:30px 15px 40px 15px;
 }
-.announcement-container{
-    grid-row: 2/3;
-    
-}
-.trending-container{
-grid-row: 3/4;
-}
+
 .card{
     background-color: white;
-    padding: 15px;
+    padding: 25px;
     border-radius: 5px;
-    box-shadow: 6px 7px 5px 0px lightgray;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 button{
     background-color: rgb(59, 132, 241);
-    padding: 15px 30px;
+    width: 100px;
+    padding: 10px 30px;
     border: none;
     border-radius: 45px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
 }
 input{
     height: 2rem;
     width: 600px;
     border-radius: 45px;
-    background-color: lightgray;
+    background-color:#E2E8F0;
     border: none;
+}
+label{
+    margin-right: 10px;
 }
 .first-header-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    margin: 15px 0 30px 0;
+}
+.top-right-icons p{
+    font-weight: bold;
+}
+.user-profile{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-bottom: 15px;
+    
+}
+.left-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+}
+.header svg{
+    width: 25px; 
+    height: 25px;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+}
+.bigger-profile-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(251, 255, 6);
+}
+.smaller-profile-pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(251, 255, 6);
+}
+.top-right-icons{
+ display: flex;
+ align-items: center;
+ gap: 25px;
+}
+.greeting{
+    font-weight: bold;
+}
+.user-name{
+    font-size:1.5625rem;
+    font-weight: bold;
+}
+ul li{
+    list-style: none;
+}
+.sidebar-header svg{
+    width: 60px;
+    height: 60px;
+}
+.sidebar-header{
+   display: flex;
+   align-items: center;
+   font-weight: bold;
+   font-size: 1.5625rem;
+   margin: 0 15px;
+}
+.sidebar-content svg,.sidebar-footer svg{
+     width: 20px;
+     height: 20px;
+}
+.sidebar-content li{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 15px 35px;
+    gap: 20px;
+}
+.sidebar-footer li{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 15px 35px;
+    gap: 20px;
+}
+.main-content h2{
+    font-size: 1.125rem;
+}
+h1{
+    font-size: 1.25rem;
+}
+.announcement-card, .trending-card{
+    margin-right:30px;
+    
+}
+.announcement-header{
+    padding: 30px 0 15px 0;
+}
+.content-header h1{
+    padding-bottom: 15px;
+}
+.announcement-card h2{
+    font-size: 1rem;
+}
+hr{
+    margin: 15px 0 15px 0;
+}
+.trending-header h1{
+    margin: 30px 0 15px 0;
+}
+.trending-card, .announcement-card{
+    padding:20.5px;
+    width: 280px;
+}
+.trending-profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.trending-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.card p{
+    color: gray;
+}
+#atUser{
+    color: black;
+}
+.card-icons svg{
+ height: 30px;
+ width: 30px;
+}
+.card-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+}
+.announcement-card p{
+    font-size: 0.75rem;
 }
